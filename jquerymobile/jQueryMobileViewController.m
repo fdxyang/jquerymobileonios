@@ -14,10 +14,23 @@
 
 @implementation jQueryMobileViewController
 
+    @synthesize myWebView;
+    
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    myWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0,0,screenRect.size.width, screenRect.size.height)];
+    [myWebView setDelegate:self];
+    [self.view addSubview:myWebView];
+    self.myWebView=myWebView;
+    
+    NSString * fileURL = [[NSBundle mainBundle] pathForResource:@"jquerymobile" ofType:@"html"];
+    NSURL * url = [NSURL URLWithString:[fileURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSURLRequest * urlRequest = [NSURLRequest requestWithURL:url];
+    [myWebView loadRequest:urlRequest];
 }
 
 - (void)didReceiveMemoryWarning

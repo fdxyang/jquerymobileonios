@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface jQueryMobileViewController : UIViewController
-
+@interface jQueryMobileViewController : UIViewController<UIWebViewDelegate>
+@property (strong,nonatomic) IBOutlet UIWebView *myWebView;
 @end
