@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB588CAF17FD6DF2001E2875 /* webinfo in Resources */ = {isa = PBXBuildFile; fileRef = CB588CAE17FD6DF2001E2875 /* webinfo */; };
 		CBE43B0617FD10F6001E1113 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE43B0517FD10F6001E1113 /* Foundation.framework */; };
 		CBE43B0817FD10F6001E1113 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE43B0717FD10F6001E1113 /* CoreGraphics.framework */; };
 		CBE43B0A17FD10F6001E1113 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE43B0917FD10F6001E1113 /* UIKit.framework */; };
@@ -21,7 +22,6 @@
 		CBE43B2717FD10F6001E1113 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBE43B0917FD10F6001E1113 /* UIKit.framework */; };
 		CBE43B2F17FD10F6001E1113 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBE43B2D17FD10F6001E1113 /* InfoPlist.strings */; };
 		CBE43B3117FD10F6001E1113 /* jquerymobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE43B3017FD10F6001E1113 /* jquerymobileTests.m */; };
-		CBE43B3B17FD1560001E1113 /* jquerymobile.html in Resources */ = {isa = PBXBuildFile; fileRef = CBE43B3A17FD1560001E1113 /* jquerymobile.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB588CAE17FD6DF2001E2875 /* webinfo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webinfo; sourceTree = "<group>"; };
 		CBE43B0217FD10F6001E1113 /* jquerymobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jquerymobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE43B0517FD10F6001E1113 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CBE43B0717FD10F6001E1113 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +55,6 @@
 		CBE43B2C17FD10F6001E1113 /* jquerymobileTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jquerymobileTests-Info.plist"; sourceTree = "<group>"; };
 		CBE43B2E17FD10F6001E1113 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CBE43B3017FD10F6001E1113 /* jquerymobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jquerymobileTests.m; sourceTree = "<group>"; };
-		CBE43B3A17FD1560001E1113 /* jquerymobile.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jquerymobile.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +114,7 @@
 		CBE43B0B17FD10F6001E1113 /* jquerymobile */ = {
 			isa = PBXGroup;
 			children = (
+				CB588CAE17FD6DF2001E2875 /* webinfo */,
 				CBE43B1417FD10F6001E1113 /* jQueryMobileAppDelegate.h */,
 				CBE43B1517FD10F6001E1113 /* jQueryMobileAppDelegate.m */,
 				CBE43B1717FD10F6001E1113 /* Main.storyboard */,
@@ -121,7 +122,6 @@
 				CBE43B1B17FD10F6001E1113 /* jQueryMobileViewController.m */,
 				CBE43B1D17FD10F6001E1113 /* Images.xcassets */,
 				CBE43B0C17FD10F6001E1113 /* Supporting Files */,
-				CBE43B3A17FD1560001E1113 /* jquerymobile.html */,
 			);
 			path = jquerymobile;
 			sourceTree = "<group>";
@@ -232,7 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE43B3B17FD1560001E1113 /* jquerymobile.html in Resources */,
+				CB588CAF17FD6DF2001E2875 /* webinfo in Resources */,
 				CBE43B1E17FD10F6001E1113 /* Images.xcassets in Resources */,
 				CBE43B1017FD10F6001E1113 /* InfoPlist.strings in Resources */,
 				CBE43B1917FD10F6001E1113 /* Main.storyboard in Resources */,
@@ -465,6 +465,7 @@
 				CBE43B3617FD10F6001E1113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CBE43B3717FD10F6001E1113 /* Build configuration list for PBXNativeTarget "jquerymobileTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +474,7 @@
 				CBE43B3917FD10F6001E1113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

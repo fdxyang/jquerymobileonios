@@ -14,7 +14,7 @@
 
 @implementation jQueryMobileViewController
 
-    @synthesize myWebView;
+@synthesize myWebView;
     
 - (void)viewDidLoad
 {
@@ -27,16 +27,22 @@
     [self.view addSubview:myWebView];
     self.myWebView=myWebView;
     
-    NSString * fileURL = [[NSBundle mainBundle] pathForResource:@"jquerymobile" ofType:@"html"];
+    NSString * fileURL = [[NSBundle mainBundle] pathForResource:@"jquerymobile" ofType:@"html" inDirectory:@"webinfo"];
     NSURL * url = [NSURL URLWithString:[fileURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSURLRequest * urlRequest = [NSURLRequest requestWithURL:url];
     [myWebView loadRequest:urlRequest];
+    //myWebView.delegate=self;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+    
+-(void) webViewDidFinishLoad:(UIWebView *)webView
+{
+    [myWebView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"drawPie();"]];
 }
 
 @end
